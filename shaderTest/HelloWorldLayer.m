@@ -13,8 +13,15 @@
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
 #import "ShaderLayer.h"
+#import "ShaderSprite.h"
 
 #pragma mark - HelloWorldLayer
+
+@interface HelloWorldLayer ()
+
+@property (nonatomic, assign) ShaderSprite *sprite;
+
+@end
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -66,6 +73,11 @@
         
         [self addChild:menu];
         
+         _sprite = [ShaderSprite spriteWithFile:@"Icon-72.png"];
+        [_sprite setPosition:ccp(50, 50)];
+        [self addChild:_sprite];
+        
+        self.touchEnabled = YES;
 	}
 	return self;
 }
@@ -79,6 +91,13 @@
 	
 	// don't forget to call "super dealloc"
 	[super dealloc];
+}
+
+- (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint touchPoint = [[CCDirector sharedDirector] convertTouchToGL:touch];
+    self.sprite.position = touchPoint;
 }
 
 @end
