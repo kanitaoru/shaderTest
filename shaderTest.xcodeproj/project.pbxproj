@@ -140,12 +140,20 @@
 		E200C14116CFF732003EAAF7 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E200C14016CFF732003EAAF7 /* HelloWorldLayer.m */; };
 		E200C14416CFF732003EAAF7 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E200C14316CFF732003EAAF7 /* IntroLayer.m */; };
 		E200C14E16D0111B003EAAF7 /* ShaderSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = E200C14D16D0111B003EAAF7 /* ShaderSprite.m */; };
-		E200C15016D013E2003EAAF7 /* shader_ramp.fsh in Sources */ = {isa = PBXBuildFile; fileRef = E200C14F16D013E2003EAAF7 /* shader_ramp.fsh */; };
-		E200C15116D01BAD003EAAF7 /* shader_ramp.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E200C14F16D013E2003EAAF7 /* shader_ramp.fsh */; };
 		E23C00EC16D12DAA00586E95 /* ShaderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C00EB16D12DA900586E95 /* ShaderLayer.m */; };
-		E23C00EE16D137E800586E95 /* shader_emboss.fsh in Sources */ = {isa = PBXBuildFile; fileRef = E23C00ED16D137E800586E95 /* shader_emboss.fsh */; };
 		E2F7917416D0C94500BC6D32 /* colorRamp.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7917216D0C94500BC6D32 /* colorRamp.png */; };
 		E2F7917516D0C94500BC6D32 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = E2F7917316D0C94500BC6D32 /* grass.png */; };
+		E2FC2E7916D3D7B500197A3B /* shader_mono.fsh in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E7816D3D7B500197A3B /* shader_mono.fsh */; };
+		E2FC2E7A16D3D7CA00197A3B /* shader_mono.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E2FC2E7816D3D7B500197A3B /* shader_mono.fsh */; };
+		E2FC2E7E16D3D82A00197A3B /* AbstractShaderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E7D16D3D82A00197A3B /* AbstractShaderLayer.m */; };
+		E2FC2E8216D3E82100197A3B /* ShaderEmbossLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E8116D3E82100197A3B /* ShaderEmbossLayer.m */; };
+		E2FC2E8516D3EB2A00197A3B /* ShaderOutlineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E8416D3EB2900197A3B /* ShaderOutlineLayer.m */; };
+		E2FC2E8816D3EFE400197A3B /* ShaderMonoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E8716D3EFE400197A3B /* ShaderMonoLayer.m */; };
+		E2FC2E8A16D3F5EE00197A3B /* shader_normal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E2FC2E8916D3F4F500197A3B /* shader_normal.fsh */; };
+		E2FC2E8C16D3F61700197A3B /* shader_outline.fsh in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E8B16D3F61700197A3B /* shader_outline.fsh */; };
+		E2FC2E8D16D3F62A00197A3B /* shader_outline.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E2FC2E8B16D3F61700197A3B /* shader_outline.fsh */; };
+		E2FC2E9016D3F65500197A3B /* shader_emboss.fsh in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E8E16D3F65500197A3B /* shader_emboss.fsh */; };
+		E2FC2E9116D3F65500197A3B /* shader_ramp.fsh in Sources */ = {isa = PBXBuildFile; fileRef = E2FC2E8F16D3F65500197A3B /* shader_ramp.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -429,12 +437,23 @@
 		E200C14316CFF732003EAAF7 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		E200C14C16D0111B003EAAF7 /* ShaderSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderSprite.h; sourceTree = "<group>"; };
 		E200C14D16D0111B003EAAF7 /* ShaderSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderSprite.m; sourceTree = "<group>"; };
-		E200C14F16D013E2003EAAF7 /* shader_ramp.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_ramp.fsh; path = Resources/shader_ramp.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		E23C00EA16D12DA900586E95 /* ShaderLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderLayer.h; sourceTree = "<group>"; };
 		E23C00EB16D12DA900586E95 /* ShaderLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderLayer.m; sourceTree = "<group>"; };
-		E23C00ED16D137E800586E95 /* shader_emboss.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_emboss.fsh; path = Resources/shader_emboss.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		E2F7917216D0C94500BC6D32 /* colorRamp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colorRamp.png; path = Resources/colorRamp.png; sourceTree = "<group>"; };
 		E2F7917316D0C94500BC6D32 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grass.png; path = Resources/grass.png; sourceTree = "<group>"; };
+		E2FC2E7816D3D7B500197A3B /* shader_mono.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_mono.fsh; path = Resources/Shaders/shader_mono.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		E2FC2E7C16D3D82A00197A3B /* AbstractShaderLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractShaderLayer.h; sourceTree = "<group>"; };
+		E2FC2E7D16D3D82A00197A3B /* AbstractShaderLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractShaderLayer.m; sourceTree = "<group>"; };
+		E2FC2E8016D3E82100197A3B /* ShaderEmbossLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderEmbossLayer.h; sourceTree = "<group>"; };
+		E2FC2E8116D3E82100197A3B /* ShaderEmbossLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderEmbossLayer.m; sourceTree = "<group>"; };
+		E2FC2E8316D3EB2900197A3B /* ShaderOutlineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderOutlineLayer.h; sourceTree = "<group>"; };
+		E2FC2E8416D3EB2900197A3B /* ShaderOutlineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderOutlineLayer.m; sourceTree = "<group>"; };
+		E2FC2E8616D3EFE400197A3B /* ShaderMonoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderMonoLayer.h; sourceTree = "<group>"; };
+		E2FC2E8716D3EFE400197A3B /* ShaderMonoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderMonoLayer.m; sourceTree = "<group>"; };
+		E2FC2E8916D3F4F500197A3B /* shader_normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_normal.fsh; path = Resources/Shaders/shader_normal.fsh; sourceTree = "<group>"; };
+		E2FC2E8B16D3F61700197A3B /* shader_outline.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_outline.fsh; path = Resources/Shaders/shader_outline.fsh; sourceTree = "<group>"; };
+		E2FC2E8E16D3F65500197A3B /* shader_emboss.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_emboss.fsh; path = Resources/Shaders/shader_emboss.fsh; sourceTree = "<group>"; };
+		E2FC2E8F16D3F65500197A3B /* shader_ramp.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader_ramp.fsh; path = Resources/Shaders/shader_ramp.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -886,8 +905,11 @@
 		E200C14A16CFF747003EAAF7 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				E200C14F16D013E2003EAAF7 /* shader_ramp.fsh */,
-				E23C00ED16D137E800586E95 /* shader_emboss.fsh */,
+				E2FC2E8E16D3F65500197A3B /* shader_emboss.fsh */,
+				E2FC2E8F16D3F65500197A3B /* shader_ramp.fsh */,
+				E2FC2E7816D3D7B500197A3B /* shader_mono.fsh */,
+				E2FC2E8916D3F4F500197A3B /* shader_normal.fsh */,
+				E2FC2E8B16D3F61700197A3B /* shader_outline.fsh */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -895,6 +917,7 @@
 		E200C14B16CFF754003EAAF7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E2FC2E7F16D3D83000197A3B /* ShaderTests */,
 				E200C13C16CFF732003EAAF7 /* AppDelegate.h */,
 				E200C13D16CFF732003EAAF7 /* AppDelegate.m */,
 				E200C13F16CFF732003EAAF7 /* HelloWorldLayer.h */,
@@ -907,6 +930,21 @@
 				E23C00EB16D12DA900586E95 /* ShaderLayer.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		E2FC2E7F16D3D83000197A3B /* ShaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2FC2E7C16D3D82A00197A3B /* AbstractShaderLayer.h */,
+				E2FC2E7D16D3D82A00197A3B /* AbstractShaderLayer.m */,
+				E2FC2E8016D3E82100197A3B /* ShaderEmbossLayer.h */,
+				E2FC2E8116D3E82100197A3B /* ShaderEmbossLayer.m */,
+				E2FC2E8316D3EB2900197A3B /* ShaderOutlineLayer.h */,
+				E2FC2E8416D3EB2900197A3B /* ShaderOutlineLayer.m */,
+				E2FC2E8616D3EFE400197A3B /* ShaderMonoLayer.h */,
+				E2FC2E8716D3EFE400197A3B /* ShaderMonoLayer.m */,
+			);
+			name = ShaderTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -960,7 +998,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E200C15116D01BAD003EAAF7 /* shader_ramp.fsh in Resources */,
+				E2FC2E8D16D3F62A00197A3B /* shader_outline.fsh in Resources */,
+				E2FC2E8A16D3F5EE00197A3B /* shader_normal.fsh in Resources */,
+				E2FC2E7A16D3D7CA00197A3B /* shader_mono.fsh in Resources */,
 				E200BFB116CFF72E003EAAF7 /* Default.png in Resources */,
 				E200BFB316CFF72E003EAAF7 /* Default@2x.png in Resources */,
 				E200BFB516CFF72E003EAAF7 /* Default-568h@2x.png in Resources */,
@@ -1097,9 +1137,15 @@
 				E200C14116CFF732003EAAF7 /* HelloWorldLayer.m in Sources */,
 				E200C14416CFF732003EAAF7 /* IntroLayer.m in Sources */,
 				E200C14E16D0111B003EAAF7 /* ShaderSprite.m in Sources */,
-				E200C15016D013E2003EAAF7 /* shader_ramp.fsh in Sources */,
 				E23C00EC16D12DAA00586E95 /* ShaderLayer.m in Sources */,
-				E23C00EE16D137E800586E95 /* shader_emboss.fsh in Sources */,
+				E2FC2E7916D3D7B500197A3B /* shader_mono.fsh in Sources */,
+				E2FC2E7E16D3D82A00197A3B /* AbstractShaderLayer.m in Sources */,
+				E2FC2E8216D3E82100197A3B /* ShaderEmbossLayer.m in Sources */,
+				E2FC2E8516D3EB2A00197A3B /* ShaderOutlineLayer.m in Sources */,
+				E2FC2E8816D3EFE400197A3B /* ShaderMonoLayer.m in Sources */,
+				E2FC2E8C16D3F61700197A3B /* shader_outline.fsh in Sources */,
+				E2FC2E9016D3F65500197A3B /* shader_emboss.fsh in Sources */,
+				E2FC2E9116D3F65500197A3B /* shader_ramp.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

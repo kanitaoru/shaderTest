@@ -15,7 +15,10 @@
 #import "ShaderLayer.h"
 #import "ShaderSprite.h"
 
-#pragma mark - HelloWorldLayer
+// ShaderTests
+#import "ShaderEmbossLayer.h"
+#import "ShaderMonoLayer.h"
+#import "ShaderOutlineLayer.h"
 
 @interface HelloWorldLayer ()
 
@@ -61,13 +64,19 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		
-        CCMenuItem *item = [CCMenuItemFont itemWithString:@"Ramp" block:^(id sender) {
-            CCScene *scene = [CCScene node];
-			[scene addChild: [ShaderLayer node]];
-			[[CCDirector sharedDirector] pushScene:scene];
+        CCMenuItem *itemEmboss  = [CCMenuItemFont itemWithString:@"Emboss" block:^(id sender) {
+            [[CCDirector sharedDirector] pushScene:[ShaderEmbossLayer scene]];
         }];
         
-        CCMenu *menu = [CCMenu menuWithItems:item, nil];
+        CCMenuItem *itemMono    = [CCMenuItemFont itemWithString:@"Mono" block:^(id sender) {
+            [[CCDirector sharedDirector] pushScene:[ShaderMonoLayer scene]];
+        }];
+        
+        CCMenuItem *itemOutline = [CCMenuItemFont itemWithString:@"Outline" block:^(id sender) {
+            [[CCDirector sharedDirector] pushScene:[ShaderOutlineLayer scene]];
+        }];
+        
+        CCMenu *menu = [CCMenu menuWithItems:itemEmboss,itemMono,itemOutline, nil];
         [menu alignItemsHorizontallyWithPadding:20.0f];
         [menu setPosition:ccp(self.contentSize.width/2, self.contentSize.height/2-50)];
         
