@@ -15,4 +15,9 @@
     return @"shader_normal.fsh";
 }
 
+- (NSString *)fragmentShaderForSprite
+{
+    return @"shader_outline.fsh";
+}
+
 @end

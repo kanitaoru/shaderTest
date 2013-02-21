@@ -122,7 +122,6 @@
     [_sprite.shaderProgram addAttribute:kCCAttributeNamePosition index:kCCVertexAttrib_Position];
     [_sprite.shaderProgram addAttribute:kCCAttributeNameTexCoord index:kCCVertexAttrib_TexCoords];
     //    [_sprite.shaderProgram addAttribute:kCCAttributeNameColor    index:kCCVertexAttrib_Color];
-    
 }
 
 - (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event

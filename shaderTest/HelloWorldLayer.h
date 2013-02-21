@@ -9,6 +9,8 @@
 
 #import <GameKit/GameKit.h>
 
+#define CC_SPRITEBATCHNODE_RENDER_SUBPIXEL 1
+
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
 

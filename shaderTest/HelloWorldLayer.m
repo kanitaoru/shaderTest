@@ -14,6 +14,7 @@
 #import "AppDelegate.h"
 #import "ShaderLayer.h"
 #import "ShaderSprite.h"
+#import "CCSprite+OutlineStroke.h"
 
 // ShaderTests
 #import "ShaderEmbossLayer.h"
@@ -22,7 +23,7 @@
 
 @interface HelloWorldLayer ()
 
-@property (nonatomic, assign) ShaderSprite *sprite;
+@property (nonatomic, assign) CCSprite *sprite;
 
 @end
 
@@ -52,12 +53,18 @@
 	// Apple recommends to re-assign "self" with the "super's" return value
 	if( (self=[super init]) ) {
 		
+        CCSprite *bg = [CCSprite spriteWithFile:@"Default.png"];
+        bg.rotation = 90;
+        bg.position = ccp(self.contentSize.width/2, self.contentSize.height/2);
+        [self addChild:bg];
+        
 		// create and initialize a Label
 		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
-
+        [label createOutlineWithStroke:4.0f color:ccBLUE];
+        
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
-	
+        
 		// position the label on the center of the screen
 		label.position =  ccp( size.width /2 , size.height/2 );
 		
@@ -82,7 +89,9 @@
         
         [self addChild:menu];
         
-         _sprite = [ShaderSprite spriteWithFile:@"Icon-72.png"];
+        _sprite = [CCSprite spriteWithFile:@"Icon-72.png"];
+        [_sprite createOutlineWithStroke:2.0f color:ccBLACK];
+        
         [_sprite setPosition:ccp(50, 50)];
         [self addChild:_sprite];
         
